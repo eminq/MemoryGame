@@ -93,7 +93,6 @@ body {
     border: 2px solid black;
 }
 
-
 footer {
     font-size: 15px;
     opacity: 0.7;
@@ -108,4 +107,75 @@ footer {
 footer a {
     text-decoration: none;
     color: lightseagreen;
+}
+
+@media screen and (max-width:1000px) {
+    .container {
+        width: 90%;
+    }
+    .grid {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 90%;
+        height: 600px;
+    }
+    .grid img{
+        width: calc(100%/3);
+        height: 150px;
+    }
+    .score {
+        font-size: 20px;
+    }
+    .moves {
+        font-size: 20px;
+    }
+    .reset-btn {
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 5px 10px;
+        position: relative;
+        margin-left: 45%;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    .header {
+        font-size: 30px;
+    }
+    .score {
+        font-size: 12px;
+    }
+    .moves {
+        font-size: 12px;
+    }
+    .container {
+        width: 100%;
+    }
+    .grid {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+        height: 480px;
+    }
+    .grid img{
+        width: calc(100%/3);
+        height: 120px;
+    }
+    .reset-btn {
+        font-size: 12px;
+        border-radius: 10px;
+        padding: 5px 10px;
+        position: relative;
+        margin-left: 45%;
+        margin-right: auto;
+    }
+    .reset-btn:hover {
+        box-shadow: none;
+        background-color: rgb(1, 115, 115);
+        color: white;
+        border: none;
+    }
 }
